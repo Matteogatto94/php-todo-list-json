@@ -22,6 +22,12 @@
                     {{task}}
                 </li>
             </ul>
+
+            <div class="mt-3 d-flex mt-2">
+                <input type="text" name="task" id="task" class="form-control rounded-0" placeholder="Add a new task" aria-describedby="taskHelper" v-model="newTask">
+
+                <button @click="saveTasks" type="submit" class="btn btn-primary rounded-0">Submit</button>
+            </div>
         </div>
     </div>
 
